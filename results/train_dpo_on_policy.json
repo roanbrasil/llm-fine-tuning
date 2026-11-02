@@ -1,0 +1,43 @@
+{
+  "method": "DPO + QLoRA (beta=0.1) on the merged SFT model, on-policy pairs; reference = SFT model",
+  "pairs": 1000,
+  "prompts_sampled": 1920,
+  "sft_error_rate_on_pool": 0.5302083333333333,
+  "example_pair": {
+    "prompt": [
+      {
+        "role": "user",
+        "content": "Convert 467 US gallons to liters."
+      }
+    ],
+    "chosen": [
+      {
+        "role": "assistant",
+        "content": "{\"value\": 1767.79, \"unit\": \"L\"}"
+      }
+    ],
+    "rejected": [
+      {
+        "role": "assistant",
+        "content": "{\"value\": 1803.25, \"unit\": \"L\"}"
+      }
+    ]
+  },
+  "epochs": 1,
+  "train_runtime_s": 41.0,
+  "peak_vram_gb": 0.76,
+  "first_log": {
+    "loss": 0.6851340770721436,
+    "rewards/chosen": -0.0038557792315259574,
+    "rewards/rejected": -0.02091693060938269,
+    "rewards/accuracies": 0.5,
+    "rewards/margins": 0.017061150935478508
+  },
+  "last_log": {
+    "loss": 0.445954704284668,
+    "rewards/chosen": -2.9772778749465942,
+    "rewards/rejected": -3.9550914764404297,
+    "rewards/accuracies": 0.825,
+    "rewards/margins": 0.9778136134147644
+  }
+}

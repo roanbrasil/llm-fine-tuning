@@ -1,0 +1,292 @@
+{
+  "base": {
+    "n": 300,
+    "format_ok": 0.0,
+    "correct": 0.0,
+    "samples": [
+      {
+        "question": "How many miles is 46.7 kilometers?",
+        "output": "To convert kilometers to miles, you can use the conversion factor that 1 kilometer is approximately equal to 0.621371 miles.",
+        "expected": "{\"value\": 29.02, \"unit\": \"mi\"}",
+        "format_ok": false,
+        "correct": false
+      },
+      {
+        "question": "Convert 127 meters to feet.",
+        "output": "To convert meters to feet, you can use the conversion factor that 1 meter is approximately equal to 3.28084 feet. Here's",
+        "expected": "{\"value\": 416.67, \"unit\": \"ft\"}",
+        "format_ok": false,
+        "correct": false
+      },
+      {
+        "question": "Please express 340.9 degrees Fahrenheit in degrees Celsius.",
+        "output": "To convert degrees Fahrenheit to degrees Celsius, you can use the following formula:\n\n\\[ C = \\frac{5}{9} (F - 32)",
+        "expected": "{\"value\": 171.61, \"unit\": \"C\"}",
+        "format_ok": false,
+        "correct": false
+      },
+      {
+        "question": "474.7 degrees Celsius in degrees Fahrenheit?",
+        "output": "To convert 474.7 degrees Celsius to degrees Fahrenheit, you can use the following formula:\n\n\\[ F = C \\times \\frac{9}{",
+        "expected": "{\"value\": 886.46, \"unit\": \"F\"}",
+        "format_ok": false,
+        "correct": false
+      },
+      {
+        "question": "Please express 435.6 kilometers in miles.",
+        "output": "To convert kilometers to miles, you can use the conversion factor that 1 kilometer is approximately equal to 0.621371 miles.",
+        "expected": "{\"value\": 270.67, \"unit\": \"mi\"}",
+        "format_ok": false,
+        "correct": false
+      }
+    ],
+    "general_text_ppl": 17.541115507840228
+  },
+  "sft": {
+    "n": 300,
+    "format_ok": 1.0,
+    "correct": 0.49333333333333335,
+    "samples": [
+      {
+        "question": "How many miles is 46.7 kilometers?",
+        "output": "{\"value\": 29.03, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 29.02, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Convert 127 meters to feet.",
+        "output": "{\"value\": 413.05, \"unit\": \"ft\"}",
+        "expected": "{\"value\": 416.67, \"unit\": \"ft\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Please express 340.9 degrees Fahrenheit in degrees Celsius.",
+        "output": "{\"value\": 168.52, \"unit\": \"C\"}",
+        "expected": "{\"value\": 171.61, \"unit\": \"C\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "474.7 degrees Celsius in degrees Fahrenheit?",
+        "output": "{\"value\": 890.36, \"unit\": \"F\"}",
+        "expected": "{\"value\": 886.46, \"unit\": \"F\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "Please express 435.6 kilometers in miles.",
+        "output": "{\"value\": 271.09, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 270.67, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      }
+    ],
+    "general_text_ppl": 17.678700539518232
+  },
+  "sft_dpo": {
+    "n": 300,
+    "format_ok": 1.0,
+    "correct": 0.39666666666666667,
+    "samples": [
+      {
+        "question": "How many miles is 46.7 kilometers?",
+        "output": "{\"value\": 29.03, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 29.02, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Convert 127 meters to feet.",
+        "output": "{\"value\": 416.39, \"unit\": \"ft\"}",
+        "expected": "{\"value\": 416.67, \"unit\": \"ft\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Please express 340.9 degrees Fahrenheit in degrees Celsius.",
+        "output": "{\"value\": 168.78, \"unit\": \"C\"}",
+        "expected": "{\"value\": 171.61, \"unit\": \"C\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "474.7 degrees Celsius in degrees Fahrenheit?",
+        "output": "{\"value\": 893.26, \"unit\": \"F\"}",
+        "expected": "{\"value\": 886.46, \"unit\": \"F\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "Please express 435.6 kilometers in miles.",
+        "output": "{\"value\": 275.19, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 270.67, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": false
+      }
+    ],
+    "general_text_ppl": 18.443961940677575
+  },
+  "sft_dpo_rpo": {
+    "n": 300,
+    "format_ok": 0.9933333333333333,
+    "correct": 0.5133333333333333,
+    "samples": [
+      {
+        "question": "How many miles is 46.7 kilometers?",
+        "output": "{\"value\": 29.03, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 29.02, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Convert 127 meters to feet.",
+        "output": "{\"value\": 415.03, \"unit\": \"ft\"}",
+        "expected": "{\"value\": 416.67, \"unit\": \"ft\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Please express 340.9 degrees Fahrenheit in degrees Celsius.",
+        "output": "{\"value\": 168.22, \"unit\": \"C\"}",
+        "expected": "{\"value\": 171.61, \"unit\": \"C\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "474.7 degrees Celsius in degrees Fahrenheit?",
+        "output": "{\"value\": 869.06, \"unit\": \"F\"}",
+        "expected": "{\"value\": 886.46, \"unit\": \"F\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "Please express 435.6 kilometers in miles.",
+        "output": "{\"value\": 271.09, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 270.67, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      }
+    ],
+    "general_text_ppl": 17.991540176320346
+  },
+  "sft_dpo_on_policy": {
+    "n": 300,
+    "format_ok": 0.9666666666666667,
+    "correct": 0.23666666666666666,
+    "samples": [
+      {
+        "question": "How many miles is 46.7 kilometers?",
+        "output": "{\"value\": 28.9, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 29.02, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Convert 127 meters to feet.",
+        "output": "{\"value\": 420.9, \"unit\": \"ft\"}",
+        "expected": "{\"value\": 416.67, \"unit\": \"ft\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "Please express 340.9 degrees Fahrenheit in degrees Celsius.",
+        "output": "{\"value\": 17.2, \"unit\": \"C\"}",
+        "expected": "{\"value\": 171.61, \"unit\": \"C\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "474.7 degrees Celsius in degrees Fahrenheit?",
+        "output": "{\"value\": 86.1, \"unit\": \"F\"}",
+        "expected": "{\"value\": 886.46, \"unit\": \"F\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "Please express 435.6 kilometers in miles.",
+        "output": "{\"value\": 267.1, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 270.67, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": false
+      }
+    ],
+    "general_text_ppl": 18.685669963453012
+  },
+  "sft_dpo_on_policy_rpo": {
+    "n": 300,
+    "format_ok": 0.9966666666666667,
+    "correct": 0.58,
+    "samples": [
+      {
+        "question": "How many miles is 46.7 kilometers?",
+        "output": "{\"value\": 28.91, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 29.02, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Convert 127 meters to feet.",
+        "output": "{\"value\": 418.53, \"unit\": \"ft\"}",
+        "expected": "{\"value\": 416.67, \"unit\": \"ft\"}",
+        "format_ok": true,
+        "correct": true
+      },
+      {
+        "question": "Please express 340.9 degrees Fahrenheit in degrees Celsius.",
+        "output": "{\"value\": 172.88, \"unit\": \"C\"}",
+        "expected": "{\"value\": 171.61, \"unit\": \"C\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "474.7 degrees Celsius in degrees Fahrenheit?",
+        "output": "{\"value\": 869.26, \"unit\": \"F\"}",
+        "expected": "{\"value\": 886.46, \"unit\": \"F\"}",
+        "format_ok": true,
+        "correct": false
+      },
+      {
+        "question": "Please express 435.6 kilometers in miles.",
+        "output": "{\"value\": 271.08, \"unit\": \"mi\"}",
+        "expected": "{\"value\": 270.67, \"unit\": \"mi\"}",
+        "format_ok": true,
+        "correct": true
+      }
+    ],
+    "general_text_ppl": 17.806524129126792
+  },
+  "held_out_pairs": {
+    "sft": {
+      "n": 300,
+      "policy_prefers_chosen": 0.9933333333333333,
+      "dpo_loss": 0.6931471824645996,
+      "mean_reward_margin": 0.0
+    },
+    "sft_dpo": {
+      "n": 300,
+      "policy_prefers_chosen": 0.9933333333333333,
+      "dpo_loss": 0.06234727597870005,
+      "mean_reward_margin": 4.575062361558278
+    },
+    "sft_dpo_rpo": {
+      "n": 300,
+      "policy_prefers_chosen": 0.9966666666666667,
+      "dpo_loss": 0.11437880632622788,
+      "mean_reward_margin": 2.743684060970942
+    },
+    "sft_dpo_on_policy": {
+      "n": 300,
+      "policy_prefers_chosen": 0.8366666666666667,
+      "dpo_loss": 0.6751760232355446,
+      "mean_reward_margin": 0.6622245423744122
+    },
+    "sft_dpo_on_policy_rpo": {
+      "n": 300,
+      "policy_prefers_chosen": 0.99,
+      "dpo_loss": 0.45131717175245284,
+      "mean_reward_margin": 0.6078506990211705
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "method": "DPO + QLoRA (beta=0.1) on the merged SFT model; reference = adapters disabled",
+  "pairs": 1000,
+  "epochs": 1,
+  "train_runtime_s": 40.5,
+  "peak_vram_gb": 0.75,
+  "first_log": {
+    "loss": 0.603172492980957,
+    "rewards/chosen": 0.007368043740279972,
+    "rewards/rejected": -0.22088724952191113,
+    "rewards/accuracies": 0.75,
+    "rewards/margins": 0.22825529703404754
+  },
+  "last_log": {
+    "loss": 0.03265845775604248,
+    "rewards/chosen": -0.6093528866767883,
+    "rewards/rejected": -6.213441705703735,
+    "rewards/accuracies": 1.0,
+    "rewards/margins": 5.604088830947876
+  }
+}

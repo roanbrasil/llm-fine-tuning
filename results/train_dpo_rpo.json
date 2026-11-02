@@ -1,0 +1,41 @@
+{
+  "method": "DPO + SFT term (RPO) + QLoRA (beta=0.1) on the merged SFT model, synthetic pairs; reference = SFT model",
+  "pairs": 1000,
+  "example_pair": {
+    "prompt": [
+      {
+        "role": "user",
+        "content": "297 pounds in kilograms?"
+      }
+    ],
+    "chosen": [
+      {
+        "role": "assistant",
+        "content": "{\"value\": 134.72, \"unit\": \"kg\"}"
+      }
+    ],
+    "rejected": [
+      {
+        "role": "assistant",
+        "content": "{\"value\": 654.77, \"unit\": \"kg\"}"
+      }
+    ]
+  },
+  "epochs": 1,
+  "train_runtime_s": 41.6,
+  "peak_vram_gb": 0.75,
+  "first_log": {
+    "loss": 0.9504158973693848,
+    "rewards/chosen": 0.011318380211014301,
+    "rewards/rejected": -0.19247163170948625,
+    "rewards/accuracies": 0.7125,
+    "rewards/margins": 0.20379000941757114
+  },
+  "last_log": {
+    "loss": 0.4575661659240723,
+    "rewards/chosen": -0.030653357319533826,
+    "rewards/rejected": -3.2321743726730348,
+    "rewards/accuracies": 1.0,
+    "rewards/margins": 3.2015210151672364
+  }
+}

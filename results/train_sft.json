@@ -1,0 +1,14 @@
+{
+  "method": "SFT + QLoRA (NF4 base, LoRA r=16 alpha=32 on q,k,v,o,gate,up,down)",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "examples": 2000,
+  "epochs": 1,
+  "trainable_params": 8798208,
+  "total_params_4bit_view": 323917696,
+  "train_loss_first_logged": 1.4214486122131347,
+  "train_loss_last_logged": 0.3482653617858887,
+  "train_runtime_s": 35.4,
+  "peak_vram_gb": 0.75,
+  "adapter_size_mb": 17.6,
+  "final_train_loss": 0.45180806159973147
+}
